@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>JavaScript by Subid</title>
+</head>
+
+<body class="container-sm" style="font-family: 'Poppins', sans-serif;">
+    <!--Write a program to add two integer numbers and display the result -->
+    <h1 class="pb-5">All my JavaScript Programs</h1>
+    <h2 class="fs-4">The sum of two integer numbers</h2>
+    <div class="sumOfTwo px-auto">
+        <form id="form" class="row g-3" action="/" method="GET">
+            <div class="col-md-2">
+                <label for="input1stNumber" class="form-label">1st Number</label>
+                <input type="text" placeholder="Number" class="form-control" id="input1stNumber" required>
+            </div>
+            <div class="col-md-2">
+                <label for="input2ndNumber4" class="form-label">2nd Number</label>
+                <input type="text" placeholder="Number" class="form-control" id="input2ndNumber" required>
+            </div>
+            <div class="col-md-2">
+                <label for="inputOperation" class="form-label">Operation</label>
+                <select id="inputOperation" class="form-select" required>
+                    <option value="">Choose...</option>
+                    <option value="1">Addition</option>
+                    <option value="2">Subtraction</option>
+                    <option value="3">Multiplication</option>
+                    <option value="4">Division</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary" onclick="calc();">Calculate</button>
+            </div>
+            <div class="col-md-2">
+                <label for="inputResult" class="form-label">Result</label>
+                <input type="text" placeholder="Result" class="form-control" id="inputResult">
+            </div>
+        </form>
+    </div>
+    <script defer src="index.js"></script>
+</body>
+
+</html>
