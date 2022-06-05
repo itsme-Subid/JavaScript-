@@ -55,7 +55,7 @@ function check5() {
 
 // Operations and display results
 const form = document.getElementById('form');
-form.addEventListener("submit", (e) => {
+form.addEventListener("click", (e) => {
     e.preventDefault();
     let select = document.getElementById('inputOperation');
     let operator = parseInt(select.options[select.selectedIndex].value);
