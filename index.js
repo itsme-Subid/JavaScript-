@@ -1,5 +1,31 @@
-// Modal trigger for displaying on loading page
-document.getElementById('modalTrigger').click();
+
+// Fully bug free Basic Calculator.
+// Language: javascript
+// Path: index.js
+// Made by itsme-Subid
+// Credit:
+// Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
+// Thank you to those who helped me in this project.
+// Date: 05-06-2022
+// Version: 1.0
+
+function swap() {
+    let n1 = parseFloat(document.getElementById('input1stNumber').value), n2 = parseFloat(document.getElementById('input2ndNumber').value);
+    let temp = n1;
+    n1 = n2;
+    n2 = temp;
+    let element = document.getElementById('input1stNumber');
+    element.value = n1;
+    element = document.getElementById('input2ndNumber');
+    element.value = n2;
+}
+
+const mediaQuery = window.matchMedia('(min-width: 768px)')
+// Check if the media query is true
+if (!mediaQuery.matches) {
+    // Then trigger an alert
+    hide("dummyLabel");
+}
 
 // Interface changes
 function check5() {
@@ -11,6 +37,7 @@ function check5() {
     switch (operator) {
         case 5:
             hide("n2Div");
+            hide("swap");
             break;
         case 6:
             changeName("Base", "Exponent");
@@ -18,6 +45,7 @@ function check5() {
         case 7:
             changeName("Number", "")
             hide("n2Div");
+            hide("swap");
             break;
         case 8:
             changeName("%", "Of");
@@ -27,7 +55,7 @@ function check5() {
 
 // Operations and display results
 const form = document.getElementById('form');
-form.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
     e.preventDefault();
     let select = document.getElementById('inputOperation');
     let operator = parseInt(select.options[select.selectedIndex].value);
@@ -66,7 +94,7 @@ form.addEventListener("click", (e) => {
     }
     let element = document.getElementById('inputResult');
     element.value = result;
-    console.clear();
+    // console.clear();
 });
 
 // Function to hide elements
@@ -79,7 +107,6 @@ function hide(string) {
     }
 }
 
-
 // Function to change names
 function changeName(place1, place2) {
     let element = document.getElementById('n1');
@@ -87,12 +114,3 @@ function changeName(place1, place2) {
     element = document.getElementById('n2');
     element.innerHTML = place2;
 }
-
-// Fully bug free Basic Calculator.
-// Language: javascript
-// Path: index.js
-// Made by itsme-Subid
-// Credit:
-// Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
-// Thank you to those who helped me in this project.
-// Date: 05-06-2022
