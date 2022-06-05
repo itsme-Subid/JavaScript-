@@ -61,6 +61,7 @@ form.addEventListener("click", (e) => {
     }
     let element = document.getElementById('inputResult');
     element.value = result;
+    console.clear();
 });
 
 function hide(string) {
@@ -78,3 +79,12 @@ function changeName(place1, place2) {
     element = document.getElementById('n2');
     element.innerHTML = place2;
 }
+
+// Fully bug free Basic Calculator.
+// Language: javascript
+// Path: index.js
+// Made by itsme-Subid
+// Credit:
+// Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
+// Thank you to those who helped me in this project.
+// Date: 05-06-2022
