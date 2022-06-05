@@ -7,7 +7,7 @@
 // Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
 // Thank you to those who helped me in this project.
 // Date: 05-06-2022
-// Version: 1.0.1
+// Version: 1.0.2
 
 function swap() {
     let n1 = parseFloat(document.getElementById('input1stNumber').value), n2 = parseFloat(document.getElementById('input2ndNumber').value);
