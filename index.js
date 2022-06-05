@@ -1,3 +1,7 @@
+// Modal trigger for displaying on loading page
+document.getElementById('modalTrigger').click();
+
+// Interface changes
 function check5() {
     let select = document.getElementById('inputOperation');
     let operator = parseInt(select.options[select.selectedIndex].value);
@@ -21,6 +25,7 @@ function check5() {
     }
 }
 
+// Operations and display results
 const form = document.getElementById('form');
 form.addEventListener("click", (e) => {
     e.preventDefault();
@@ -64,6 +69,7 @@ form.addEventListener("click", (e) => {
     console.clear();
 });
 
+// Function to hide elements
 function hide(string) {
     let x = document.getElementById(string);
     if (x.style.display === "none") {
@@ -73,6 +79,8 @@ function hide(string) {
     }
 }
 
+
+// Function to change names
 function changeName(place1, place2) {
     let element = document.getElementById('n1');
     element.innerHTML = place1;
