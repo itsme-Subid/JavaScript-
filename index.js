@@ -7,7 +7,7 @@
 // Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
 // Thank you to those who helped me in this project.
 // Date: 05-06-2022
-// Version: 1.0
+// Version: 1.0.1
 
 function swap() {
     let n1 = parseFloat(document.getElementById('input1stNumber').value), n2 = parseFloat(document.getElementById('input2ndNumber').value);
@@ -94,7 +94,7 @@ form.addEventListener("submit", (e) => {
     }
     let element = document.getElementById('inputResult');
     element.value = result;
-    // console.clear();
+    console.clear();
 });
 
 // Function to hide elements
