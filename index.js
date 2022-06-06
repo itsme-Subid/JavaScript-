@@ -7,8 +7,12 @@
 // Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
 // Thank you to those who helped me in this project.
 // Date: 05-06-2022
-// Version: 1.0.2
+// Version: 1.0.3
 
+// Modal Trigger
+document.getElementById('modalTrigger').click();
+
+// Function to Swap the value of input fields
 function swap() {
     let n1 = parseFloat(document.getElementById('input1stNumber').value), n2 = parseFloat(document.getElementById('input2ndNumber').value);
     let temp = n1;
