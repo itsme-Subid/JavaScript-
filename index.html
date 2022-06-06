@@ -57,9 +57,10 @@
     <h2 class="fs-4 text-wrap">Basic Calculator</h2>
     <div class="sumOfTwo px-auto">
         <form id="form" class="row g-3" action="/" method="GET">
-            <div class="col-md-2">
-                <label for="inputOperation" class="form-label">Operation</label>
-                <select id="inputOperation" class="form-select" required onclick="check5();">
+            <!-- Operation -->
+            <div class="col-md-2" onclick="check5();">
+                <label for=" inputOperation" class="form-label">Operation</label>
+                <select id="inputOperation" class="form-select" required>
                     <option value="">Choose...</option>
                     <option value="1">Addition</option>
                     <option value="2">Subtraction</option>
@@ -71,10 +72,12 @@
                     <option value="8">Percentage</option>
                 </select>
             </div>
+            <!-- First number -->
             <div class="col-md-2">
                 <label for="input1stNumber" class="form-label" id="n1">1st Number</label>
                 <input type="number" placeholder="Number" class="form-control" id="input1stNumber" required>
             </div>
+            <!-- Swap Button -->
             <div class="col-md-2" id="swap">
                 <label for="input1stNumber" class="form-label pb-3" id="dummyLabel"></label>
                 <button type="button" class="btn btn-primary form-control" data-bs-toggle="tooltip"
@@ -95,13 +98,16 @@
                         </g>
                     </svg></button>
             </div>
+            <!-- Second number -->
             <div class="col-md-2" id="n2Div">
                 <label for="input2ndNumber4" class="form-label" id="n2">2nd Number</label>
                 <input type="number" placeholder="Number" class="form-control" id="input2ndNumber" required>
             </div>
+            <!-- Calculate Button -->
             <div class="col-12">
                 <button type="submit" class="btn btn-primary">Calculate</button>
             </div>
+            <!-- Result Output Field -->
             <div class="col-md-2">
                 <label for="inputResult" class="form-label">Result</label>
                 <input type="number" placeholder="Result" class="form-control" id="inputResult">
