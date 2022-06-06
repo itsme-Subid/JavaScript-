@@ -7,7 +7,7 @@
 // Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
 // Thank you to those who helped me in this project.
 // Date: 05-06-2022
-// Version: 1.0.4
+// Version: 1.0.5
 
 // Modal Trigger
 document.getElementById('modalTrigger').click();
@@ -31,29 +31,36 @@ if (!mediaQuery.matches) {
     hide("dummyLabel");
 }
 
-// Interface changes
+// Interface changes according to the selected operation
 function check5() {
     let select = document.getElementById('inputOperation');
-    let operator = parseInt(select.options[select.selectedIndex].value);
+    let operator = 0;
+    operator = parseInt(select.options[select.selectedIndex].value);
     if (operator < 5) {
         changeName("1st Number", "2nd Number");
-    }
-    switch (operator) {
-        case 5:
-            hide("n2Div");
-            hide("swap");
-            break;
-        case 6:
-            changeName("Base", "Exponent");
-            break;
-        case 7:
-            changeName("Number", "")
-            hide("n2Div");
-            hide("swap");
-            break;
-        case 8:
-            changeName("%", "Of");
-            break;
+    } else {
+        switch (operator) {
+            case 5:
+                changeName("Number", "");
+                hide("n2Div");
+                hide("swap");
+                break;
+            case 6:
+                changeName("Base", "Exponent");
+                show("n2Div");
+                show("swap");
+                break;
+            case 7:
+                changeName("Number", "")
+                hide("n2Div");
+                hide("swap");
+                break;
+            case 8:
+                changeName("%", "Of");
+                show("n2Div");
+                show("swap");
+                break;
+        }
     }
 }
 
@@ -104,11 +111,13 @@ form.addEventListener("click", (e) => {
 // Function to hide elements
 function hide(string) {
     let x = document.getElementById(string);
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
+    x.style.display = "none";
+}
+
+// Function to show elements
+function show(string) {
+    let x = document.getElementById(string);
+    x.style.display = "block";
 }
 
 // Function to change names

@@ -24,7 +24,7 @@
     <title>JavaScript Programs by Subid</title>
 </head>
 
-<body class="container-sm" style="font-family: 'Poppins', sans-serif;">
+<body class="" style="font-family: 'Poppins', sans-serif;">
     <!--Write a program to add two integer numbers and display the result -->
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" style="display: none;" data-bs-toggle="modal"
@@ -52,67 +52,72 @@
         </div>
     </div>
     <!-- Header -->
-    <h1 class="pb-3 pt-4">All my JavaScript Programs</h1>
+    <h1 class="pb-3 pt-4 container-sm">All my JavaScript Programs</h1>
     <!-- Calculator -->
-    <h2 class="fs-4 text-wrap">Basic Calculator</h2>
-    <div class="sumOfTwo px-auto">
-        <form id="form" class="row g-3" action="/" method="GET">
-            <!-- Operation -->
-            <div class="col-md-2" onclick="check5();">
-                <label for=" inputOperation" class="form-label">Operation</label>
-                <select id="inputOperation" class="form-select" required>
-                    <option value="">Choose...</option>
-                    <option value="1">Addition</option>
-                    <option value="2">Subtraction</option>
-                    <option value="3">Multiplication</option>
-                    <option value="4">Division</option>
-                    <option value="5">Square Root</option>
-                    <option value="6">Power</option>
-                    <option value="7">Inverse</option>
-                    <option value="8">Percentage</option>
-                </select>
-            </div>
-            <!-- First number -->
-            <div class="col-md-2">
-                <label for="input1stNumber" class="form-label" id="n1">1st Number</label>
-                <input type="number" placeholder="Number" class="form-control" id="input1stNumber" required>
-            </div>
-            <!-- Swap Button -->
-            <div class="col-md-2" id="swap">
-                <label for="input1stNumber" class="form-label pb-3" id="dummyLabel"></label>
-                <button type="button" class="btn btn-primary form-control" data-bs-toggle="tooltip"
-                    title="Swap the values" onclick="swap();" id="swapButton"><svg width="25" height="25" version="1.0"
-                        xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt"
-                        viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+    <div class="encapsulation rounded border mx-md-5 mx-3 my-4">
+        <div class="m-md-4 mx-3 my-4">
+            <h2 class="fs-4 text-wrap container-sm">Basic Calculator</h2>
+            <div class="sumOfTwo px-auto container-sm">
+                <form id="form" class="row g-3" action="/" method="GET">
+                    <!-- Operation -->
+                    <div class="col-md-2">
+                        <label for="inputOperation" class="form-label">Operation</label>
+                        <select id="inputOperation" class="form-select" required onclick="check5();">
+                            <option value="0">Choose...</option>
+                            <option value="1">Addition</option>
+                            <option value="2">Subtraction</option>
+                            <option value="3">Multiplication</option>
+                            <option value="4">Division</option>
+                            <option value="5">Square Root</option>
+                            <option value="6">Power</option>
+                            <option value="7">Inverse</option>
+                            <option value="8">Percentage</option>
+                        </select>
+                    </div>
+                    <!-- First number -->
+                    <div class="col-md-2">
+                        <label for="input1stNumber" class="form-label" id="n1">1st Number</label>
+                        <input type="number" placeholder="Number" class="form-control" id="input1stNumber" required">
+                    </div>
+                    <!-- Swap Button -->
+                    <div class="col-md-2" id="swap">
+                        <label for="input1stNumber" class="form-label pb-3" id="dummyLabel"></label>
+                        <button type="button" class="btn btn-primary form-control" data-bs-toggle="tooltip"
+                            title="Swap the values" onclick="swap();" id="swapButton"><svg width="25" height="25"
+                                version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
+                                height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
 
-                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#FFFFFF"
-                            stroke="none">
-                            <path d="M1798 3758 c-15 -7 -179 -164 -363 -347 -344 -343 -355 -357 -355
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#FFFFFF"
+                                    stroke="none">
+                                    <path d="M1798 3758 c-15 -7 -179 -164 -363 -347 -344 -343 -355 -357 -355
                    -431 0 -32 32 -100 56 -122 57 -50 -6 -48 1441 -48 1294 0 1350 1 1383 19 122
                    65 132 233 19 308 l-43 28 -1118 5 -1118 5 156 155 c85 85 162 167 170 182 8
                    15 14 50 14 79 0 98 -66 170 -163 176 -29 2 -64 -2 -79 -9z" />
-                            <path d="M1208 2340 c-70 -21 -128 -99 -128 -171 0 -40 29 -107 56 -131 56
+                                    <path d="M1208 2340 c-70 -21 -128 -99 -128 -171 0 -40 29 -107 56 -131 56
                    -50 14 -48 1201 -48 l1107 0 -161 -163 c-127 -128 -163 -170 -172 -202 -15
                    -54 -14 -79 4 -122 21 -50 42 -72 90 -94 52 -24 107 -24 153 0 48 25 678 657
                    692 694 35 95 -16 204 -109 236 -40 13 -2689 15 -2733 1z" />
-                        </g>
-                    </svg></button>
+                                </g>
+                            </svg></button>
+                    </div>
+                    <!-- Second number -->
+                    <div class="col-md-2" id="n2Div">
+                        <label for="input2ndNumber4" class="form-label" id="n2">2nd Number</label>
+                        <input type="number" placeholder="Number" class="form-control" id="input2ndNumber" required>
+                    </div>
+                    <!-- Calculate Button -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Calculate</button>
+                    </div>
+                    <!-- Result Output Field -->
+                    <div class="col-md-2">
+                        <label for="inputResult" class="form-label">Result</label>
+                        <input type="number" placeholder="Result" class="form-control" id="inputResult">
+                    </div>
+                </form>
             </div>
-            <!-- Second number -->
-            <div class="col-md-2" id="n2Div">
-                <label for="input2ndNumber4" class="form-label" id="n2">2nd Number</label>
-                <input type="number" placeholder="Number" class="form-control" id="input2ndNumber" required>
-            </div>
-            <!-- Calculate Button -->
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Calculate</button>
-            </div>
-            <!-- Result Output Field -->
-            <div class="col-md-2">
-                <label for="inputResult" class="form-label">Result</label>
-                <input type="number" placeholder="Result" class="form-control" id="inputResult">
-            </div>
-        </form>
+        </div>
     </div>
     <!-- My js file -->
     <script defer src="index.js"></script>
