@@ -7,10 +7,35 @@
 // Special thanks to: Pampa Das for helping me to understand the runtime error and suggestions.
 // Thank you to those who helped me in this project.
 // Date: 05-06-2022
-// Version: 1.0.5
+// Version: 1.0.6
 
 // Modal Trigger
 document.getElementById('modalTrigger').click();
+
+// calculate button will be disabled or not
+document.getElementById('calcBtn').disabled = true;
+
+function disabilityToggler() {
+    document.getElementById('calcBtn').disabled = false;
+}
+
+// mode Toggler
+function modeToggler() {
+    let lightMode = document.getElementById('lightIcon');
+    let darkMode = document.getElementById('darkIcon');
+    let body = document.getElementById('body');
+    if (lightMode.style.display === 'none') {
+        darkMode.style.display = 'none';
+        lightMode.style.display = 'block';
+        body.style.backgroundColor = "#FFFFFF";
+        body.style.color = "#000000";
+    } else {
+        lightMode.style.display = 'none';
+        darkMode.style.display = 'block';
+        body.style.backgroundColor = "#1a1a1a";
+        body.style.color = "#FFFFFF";
+    }
+}
 
 // Function to Swap the value of input fields
 function swap() {
@@ -38,6 +63,8 @@ function check5() {
     operator = parseInt(select.options[select.selectedIndex].value);
     if (operator < 5) {
         changeName("1st Number", "2nd Number");
+        show("n2Div");
+        show("swap");
     } else {
         switch (operator) {
             case 5:

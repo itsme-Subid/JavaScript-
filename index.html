@@ -24,7 +24,7 @@
     <title>JavaScript Programs by Subid</title>
 </head>
 
-<body class="" style="font-family: 'Poppins', sans-serif;">
+<body class="" id="body" style="font-family: 'Poppins', sans-serif;">
     <!--Write a program to add two integer numbers and display the result -->
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" style="display: none;" data-bs-toggle="modal"
@@ -52,17 +52,88 @@
         </div>
     </div>
     <!-- Header -->
-    <h1 class="pb-3 pt-4 container-sm">All my JavaScript Programs</h1>
+    <div class="header d-flex justify-content-between mx-md-5 mx-3 my-4">
+        <h1 class="pb-3 pt-4">All my JavaScript Programs</h1>
+        <div class="pb-3 pt-4" onclick="modeToggler();" id="modeToggler">
+            <!-- light mode icon -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378.000000 378.000000"
+                preserveAspectRatio="xMidYMid meet" style="display: block; width: 2rem" id="lightIcon">
+                <g transform="translate(0.000000,378.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M1915 3600 c-44 -17 -46 -27 -45 -260 0 -122 5 -230 10 -240 16 -29
+67 -42 100 -25 15 8 30 22 34 30 3 9 6 113 6 230 0 208 -1 215 -22 239 -27 29
+-55 38 -83 26z" />
+                    <path d="M2868 3000 c-174 -177 -184 -195 -133 -245 48 -49 65 -39 237 133
+147 146 158 160 158 194 0 46 -31 78 -74 78 -27 0 -53 -22 -188 -160z" />
+                    <path d="M811 3121 c-19 -14 -25 -29 -25 -55 0 -34 12 -49 145 -182 79 -80
+157 -152 172 -160 51 -27 107 7 107 65 0 33 -11 47 -160 194 -173 168 -188
+177 -239 138z" />
+                    <path d="M1870 2909 c-104 -11 -198 -38 -296 -84 -268 -125 -448 -350 -520
+-650 -27 -111 -23 -304 10 -429 94 -363 396 -636 765 -691 123 -19 189 -19
+292 0 170 32 287 83 418 183 446 341 490 997 93 1400 -198 201 -483 303 -762
+271z m82 -516 c1 -203 2 -555 2 -783 l1 -415 -50 3 c-278 19 -545 206 -659
+463 -85 193 -86 435 -4 624 118 269 393 465 666 474 l42 1 2 -367z" />
+                    <path d="M3093 2060 c-45 -18 -58 -93 -22 -126 20 -18 36 -19 242 -16 122 2
+230 8 240 13 42 23 40 104 -3 126 -29 15 -421 17 -457 3z" />
+                    <path d="M364 2017 c-33 -28 -37 -76 -9 -107 17 -19 30 -20 245 -20 222 0 227
+0 247 23 11 12 23 30 26 40 8 22 -16 72 -38 81 -9 3 -113 6 -230 6 -210 0
+-214 0 -241 -23z" />
+                    <path d="M2750 1210 c-12 -12 -20 -33 -20 -53 0 -30 17 -50 150 -182 82 -82
+157 -153 165 -158 28 -15 77 -3 98 24 29 40 11 82 -71 159 -37 35 -106 101
+-154 147 -94 91 -128 103 -168 63z" />
+                    <path d="M1125 1211 c-25 -11 -307 -305 -317 -332 -8 -22 3 -60 23 -76 8 -5
+27 -13 43 -17 27 -7 39 4 188 151 87 87 161 168 165 181 9 36 -5 71 -37 87
+-32 17 -37 17 -65 6z" />
+                    <path d="M1932 883 c-7 -3 -20 -19 -28 -36 -14 -27 -16 -59 -9 -251 6 -205 8
+-223 28 -243 28 -31 71 -30 103 2 l25 25 -1 215 c-1 221 -8 268 -40 285 -20
+10 -56 12 -78 3z" />
+                </g>
+            </svg>
+            <!-- dark mode icon -->
+            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378.000000 378.000000"
+                preserveAspectRatio="xMidYMid meet" style="display: none; width: 2rem" id="darkIcon">
+
+                <g transform="translate(0.000000,378.000000) scale(0.100000,-0.100000)" fill="#FFFFFF" stroke="none">
+                    <path d="M1915 3600 c-44 -17 -46 -27 -45 -260 0 -122 5 -230 10 -240 16 -29
+67 -42 100 -25 15 8 30 22 34 30 3 9 6 113 6 230 0 208 -1 215 -22 239 -27 29
+-55 38 -83 26z" />
+                    <path d="M2868 3000 c-174 -177 -184 -195 -133 -245 48 -49 65 -39 237 133
+147 146 158 160 158 194 0 46 -31 78 -74 78 -27 0 -53 -22 -188 -160z" />
+                    <path d="M811 3121 c-19 -14 -25 -29 -25 -55 0 -34 12 -49 145 -182 79 -80
+157 -152 172 -160 51 -27 107 7 107 65 0 33 -11 47 -160 194 -173 168 -188
+177 -239 138z" />
+                    <path d="M1870 2909 c-104 -11 -198 -38 -296 -84 -268 -125 -448 -350 -520
+-650 -27 -111 -23 -304 10 -429 94 -363 396 -636 765 -691 123 -19 189 -19
+292 0 170 32 287 83 418 183 446 341 490 997 93 1400 -198 201 -483 303 -762
+271z m82 -516 c1 -203 2 -555 2 -783 l1 -415 -50 3 c-278 19 -545 206 -659
+463 -85 193 -86 435 -4 624 118 269 393 465 666 474 l42 1 2 -367z" />
+                    <path d="M3093 2060 c-45 -18 -58 -93 -22 -126 20 -18 36 -19 242 -16 122 2
+230 8 240 13 42 23 40 104 -3 126 -29 15 -421 17 -457 3z" />
+                    <path d="M364 2017 c-33 -28 -37 -76 -9 -107 17 -19 30 -20 245 -20 222 0 227
+0 247 23 11 12 23 30 26 40 8 22 -16 72 -38 81 -9 3 -113 6 -230 6 -210 0
+-214 0 -241 -23z" />
+                    <path d="M2750 1210 c-12 -12 -20 -33 -20 -53 0 -30 17 -50 150 -182 82 -82
+157 -153 165 -158 28 -15 77 -3 98 24 29 40 11 82 -71 159 -37 35 -106 101
+-154 147 -94 91 -128 103 -168 63z" />
+                    <path d="M1125 1211 c-25 -11 -307 -305 -317 -332 -8 -22 3 -60 23 -76 8 -5
+27 -13 43 -17 27 -7 39 4 188 151 87 87 161 168 165 181 9 36 -5 71 -37 87
+-32 17 -37 17 -65 6z" />
+                    <path d="M1932 883 c-7 -3 -20 -19 -28 -36 -14 -27 -16 -59 -9 -251 6 -205 8
+-223 28 -243 28 -31 71 -30 103 2 l25 25 -1 215 c-1 221 -8 268 -40 285 -20
+10 -56 12 -78 3z" />
+                </g>
+            </svg>
+        </div>
+    </div>
     <!-- Calculator -->
-    <div class="encapsulation rounded border mx-md-5 mx-3 my-4">
-        <div class="m-md-4 mx-3 my-4">
-            <h2 class="fs-4 text-wrap container-sm">Basic Calculator</h2>
-            <div class="sumOfTwo px-auto container-sm">
+    <div class="encapsulation rounded border mx-md-5 mx-3 my-4 shadow-sm" id="shadow">
+        <div class="container-sm my-4">
+            <h2 class="fs-4 text-wrap">Basic Calculator</h2>
+            <div class="sumOfTwo px-auto ">
                 <form id="form" class="row g-3" action="/" method="GET">
                     <!-- Operation -->
                     <div class="col-md-2">
                         <label for="inputOperation" class="form-label">Operation</label>
-                        <select id="inputOperation" class="form-select" required onclick="check5();">
+                        <select id="inputOperation" class="form-select" onclick="check5();" required>
                             <option value="0">Choose...</option>
                             <option value="1">Addition</option>
                             <option value="2">Subtraction</option>
@@ -77,7 +148,8 @@
                     <!-- First number -->
                     <div class="col-md-2">
                         <label for="input1stNumber" class="form-label" id="n1">1st Number</label>
-                        <input type="number" placeholder="Number" class="form-control" id="input1stNumber" required">
+                        <input type="number" placeholder="Number" class="form-control" id="input1stNumber" required
+                            onkeyup="disabilityToggler();">
                     </div>
                     <!-- Swap Button -->
                     <div class="col-md-2" id="swap">
@@ -108,7 +180,7 @@
                     </div>
                     <!-- Calculate Button -->
                     <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Calculate</button>
+                        <button type="submit" class="btn btn-primary" id="calcBtn">Calculate</button>
                     </div>
                     <!-- Result Output Field -->
                     <div class="col-md-2">
