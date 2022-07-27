@@ -1,6 +1,6 @@
 
 // Fully bug free Basic Calculator.
-// Language: javascript
+// Language: JavaScript
 // Path: index.js
 // Made by itsme-Subid
 // Credit:
@@ -52,7 +52,7 @@ function swap() {
 const mediaQuery = window.matchMedia('(min-width: 768px)')
 // Check if the media query is true
 if (!mediaQuery.matches) {
-    // Then trigger an alert
+    // Then trigger
     hide("dummyLabel");
 }
 
