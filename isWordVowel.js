@@ -26,6 +26,21 @@ function checkVowel(word) {
         case 'u':
             i++;
             break;
+        case 'A':
+            i++;
+            break;
+        case 'E':
+            i++;
+            break;
+        case 'I':
+            i++;
+            break;
+        case 'O':
+            i++;
+            break;
+        case 'U':
+            i++;
+            break;
 
         default:
             break;
