@@ -5,7 +5,7 @@ I personally found it very useful for many times, generally I code a program but
  
 ## Installation
 
-Does not need anything to install to run JavaScript Programs, need browser ( any ) to run it .
+Doesn't need anything to install to run JavaScript Programs, just need browser(any) to run it .
 
 ## Run Program
 
