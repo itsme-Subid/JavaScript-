@@ -9,7 +9,7 @@ Doesn't need anything to install to run JavaScript Programs, just need browser(a
 
 ## Run Program
 
-Go to the project directory 
+Go to project directory and open `Command Prompt`
 ```bash
   cd C:\Users\{User Name}\Documents\{Project Directory}
 ```
