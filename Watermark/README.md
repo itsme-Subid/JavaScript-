@@ -1,4 +1,4 @@
-# Watermark using `JS`, `Tailwind CSS` and `HTML`
+# Watermark using `JS`, `CSS` and `HTML`
 
 This Watermark is just to help other. <br>
 Beneficiary: [Chinku99](https://github.com/Chinku99)
