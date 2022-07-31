@@ -1,6 +1,6 @@
 # Basic Calculator using `JS`, `Tailwind CSS` and `HTML`
 
-This Basic Calculator is just for Skill Demonstration
+This Basic Calculator is just for Skill Demonstration.
  
 ## Test
 
