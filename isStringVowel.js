@@ -2,7 +2,7 @@
 
 {
     let string = prompt('Enter a string:'), count = 0;
-    for (let i = 0; i < string.length; i++) {
+    for (let i in string) {
         count += (checkVowel(string[i]));
     }
     console.log(count != 0 ? `'${string}' string does contain ${count} vowel` : `'${string}' string doesn't contain any vowel`);
