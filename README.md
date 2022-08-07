@@ -2,7 +2,12 @@
 
 The agenda of this repository is to help others and myself too.
 I personally found it very useful for many times, generally I code a program but forget it very frequently, so this repository help by easy accessibility to my code and also easy to go through the programs.
+
+## Complete Projects
  
+- [Basic Calculator](https://itsme-subid.github.io/JavaScript/Basic%20Calculator/)
+- [Watermark](https://itsme-subid.github.io/JavaScript/Watermark/)
+
 ## Installation
 
 Doesn't need anything to install to run JavaScript Programs, just need browser(any) to run it .
