@@ -10,7 +10,7 @@
 // Version: 1.0.6
 
 // Modal Trigger
-document.getElementById('modalTrigger').click();
+// document.getElementById('modalTrigger').click();
 
 // calculate button will be disabled or not
 document.getElementById('calcBtn').disabled = true;
