@@ -7,6 +7,7 @@ I personally found it very useful for many times, generally I code a program but
  
 - [Basic Calculator](https://itsme-subid.github.io/JavaScript/Basic%20Calculator/)
 - [Watermark](https://itsme-subid.github.io/JavaScript/Watermark/)
+- [Password Generator](https://itsme-subid.github.io/Password-Generator/)
 
 ## Installation
 
