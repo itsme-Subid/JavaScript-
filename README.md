@@ -4,10 +4,12 @@ The agenda of this repository is to help others and myself too.
 I personally found it very useful for many times, generally I code a program but forget it very frequently, so this repository help by easy accessibility to my code and also easy to go through the programs.
 
 ## Complete Projects
- 
+
+- [Blog-2022](https://itsme-subid.github.io/Blog-2022/)
+- [Love Calculator](https://itsme-subid.github.io/Love-Calculator/)
+- [Password Generator](https://itsme-subid.github.io/Password-Generator/)
 - [Basic Calculator](https://itsme-subid.github.io/JavaScript/Basic%20Calculator/)
 - [Watermark](https://itsme-subid.github.io/JavaScript/Watermark/)
-- [Password Generator](https://itsme-subid.github.io/Password-Generator/)
 
 ## Installation
 
