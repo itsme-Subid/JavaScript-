@@ -27,11 +27,11 @@ Go to Project Directory and open `Command Prompt`
 
 ## Run Program
 
-Create Repls with `node js` from [Replit](https://replit.com/) and run the `JS file` by pressing `ctrl + enter`<br> 
+Create Repls with `node js` from [Replit](https://replit.com/) and run the `JS file` by pressing <kbd>ctrl + enter</kbd><br> 
 Or, <br> 
 Embed the `JS file` to `HTML file` and run the `HTML file` by<br> 
 ```bash
   ./index.html
 ```
 Or, <br> 
-Open any browser and press `F12`, go to `Console`, paste the desired code and press `enter`
+Open any browser and press <kbd>F12</kbd>, go to `Console`, paste the desired code and press <kbd>enter</kbd>
