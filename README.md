@@ -22,7 +22,7 @@ Go to Project Directory and open `Command Prompt`
   cd C:\Users\{User Name}\Documents\{Project Directory}
 ```
 ```bash
-  git clone git@github.com:itsme-Subid/JavaScript.git .
+  git clone git@github.com:itsme-Subid/JavaScript.git
 ```
 
 ## Run Program
