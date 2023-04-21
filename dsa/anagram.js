@@ -1,5 +1,5 @@
 let first = "hello";
-let second = "llleo";
+let second = "hlleo";
 
 const isAnagram = (first, second) => {
     if (first.length !== second.length) return false;
